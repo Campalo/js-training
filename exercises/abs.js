@@ -10,6 +10,10 @@
  */
 
 // Your code :
+function number(a) {
+    if a >= 0 return a;
+    else return -a
+}
 
 //* Begin of tests
 const assert = require('assert')
