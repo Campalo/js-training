@@ -6,6 +6,14 @@
  *
  */
 
+ //* My code 
+ function sentence(array) {
+     return array.join(' ');
+    //  let result = "";
+    //  for (let i = 0 ; i < array.length ; i++) {
+    //     return result += (' ' + array);
+    //  }
+ }
 
 //* Begin of tests
 const assert = require('assert')

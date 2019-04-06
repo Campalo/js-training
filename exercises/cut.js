@@ -13,5 +13,16 @@
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof cutFirst, 'function')
+assert.strictEqual(typeof cutLast, 'function')
+assert.strictEqual(typeof cutFirstLast, 'function')
+
+assert.strictEqual(cutFirst('test'), 'st');
+assert.strictEqual(cutFirst('lolipop'), 'lipop');
+assert.strictEqual(cutLast('test'), 'te');
+assert.strictEqual(cutLast('lolipop'), 'lolip'); 
+assert.strictEqual(cutFirstLast('test'), '');
+assert.strictEqual(cutFirstLast('lolipop'), 'lip');
+
+
 // End of tests */
