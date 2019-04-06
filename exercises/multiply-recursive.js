@@ -10,6 +10,21 @@
  */
 
 // Your code :
+function multiply(num1, num2) {
+  if (num1 === 0) return 0;
+  if (num1 < 0) {
+    return multiply(num1 + 1, num2) - num2
+  } else {
+    return multiply(num1 - 1, num2) + num2
+  }
+}
+    
+
+// 2, 3
+// multiply(3, 3) // multiply(2, 3) + 3  = 6 + 3 = 9 <=> 3*3
+// multiply(2, 3) // multiply(1, 3) + 3  = 3 + 3 = 6 <=> 2*3
+// multiply(1, 3) // multiply(0, 3) + 3  = 0 + 3 = 3
+// multiply(0, 3) // 0                   = 0
 
 //* Begin of tests
 const assert = require('assert')
