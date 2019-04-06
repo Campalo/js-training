@@ -8,6 +8,9 @@
  */
 
 // Your code :
+const escapeStr = '/\\\'`"' ;
+// back slash escape the next character in a string
+
 
 //* Begin of tests
 const assert = require('assert')
